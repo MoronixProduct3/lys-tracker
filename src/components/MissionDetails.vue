@@ -157,7 +157,7 @@ const gw_m = {
     h: {
         deployement: dep.hammer,
         primary: prim.drop,
-        rule: mis.fog,
+        rule: mis.smoke,
         map: maps[7]
     }
 }
