@@ -63,6 +63,8 @@
             href="https://docs.google.com/document/d/1QBfJ2yplm8uclDQIdazjqZtnKzL6D-77/edit?usp=sharing&ouid=116957720558925974360&rtpof=true&sd=true"></v-btn>
           <v-btn class="ma-2" color="red" prepend-icon='mdi-sword' text='BCP'
             href="https://www.bestcoastpairings.com/event/MYPQGGCKCA"></v-btn>
+          <v-btn text="Grille d'évaluation de peinture" class="ma-2" color="pink" prepend-icon='mdi-brush-outline'
+            href="https://docs.google.com/forms/d/e/1FAIpQLScJT49vHxb3lxBGKVCYden85MItRbbD2SuJpVzuYYylY_aCsw/viewform?usp=sharing"></v-btn>
         </v-card>
       </v-col>
 
@@ -79,6 +81,13 @@
         <v-card title="WTC FAQs & Downloads">
           <v-btn text="WTC Downloads" class="ma-2" color="orange" prepend-icon='mdi-open-in-new'
             href="https://worldteamchampionship.com/wtc-rules/"></v-btn>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" sm="6">
+        <v-card title="Age of Sigmar">
+          <v-btn text="Grille d'évaluation de peinture" class="ma-2" color="pink" prepend-icon='mdi-brush-outline'
+            href="https://docs.google.com/forms/d/e/1FAIpQLSecILbgzWpvLXx69wdqHJO6OQS2SRW3KoK7xt4rnDJhdvysKw/viewform?usp=header"></v-btn>
         </v-card>
       </v-col>
     </v-row>
