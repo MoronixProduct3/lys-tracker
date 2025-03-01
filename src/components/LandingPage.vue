@@ -55,7 +55,7 @@
           <v-btn class="ma-2" color="red" prepend-icon='mdi-sword' text='BCP'
             href="https://www.bestcoastpairings.com/event/ErEW0z3h9ZWl"></v-btn>
           <v-btn text="Grille d'évaluation de peinture" class="ma-2" color="pink" prepend-icon='mdi-brush-outline'
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdQ4U__hBlHElhCcB30RkuUr7NQShOIUTNYKlKwjsqY6yAcBA/viewform?usp=dialog"></v-btn>
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdQ4U__hBlHElhCcB30RkuUr7NQShOIUTNYKlKwjsqY6yAcBA/viewform?usp=sharing"></v-btn>
         </v-card>
       </v-col>
 
