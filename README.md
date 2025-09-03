@@ -2,7 +2,7 @@
 
 A Warhammer 40k tournament landing page to show the day's missions.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2c9242d7-77e7-41c8-9a1e-acc27048b46c/deploy-status)](https://app.netlify.com/sites/grande-croisade-2025/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c9242d7-77e7-41c8-9a1e-acc27048b46c/deploy-status)](https://app.netlify.com/projects/teilx/deploys)
 
 ## 💿 Install
 
