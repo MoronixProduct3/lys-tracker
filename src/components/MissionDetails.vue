@@ -1,15 +1,12 @@
 <template>
     <v-row dense>
-        <v-col cols="12" md="6" lg="3">
+        <v-col cols="12" md="6" lg="4">
             <Map :m=missionObject.deployement></Map>
         </v-col>
-        <v-col cols="12" md="6" lg="3">
-            <Rule :r=missionObject.rule></Rule>
-        </v-col>
-        <v-col cols="12" md="6" lg="3">
+        <v-col cols="12" md="6" lg="4">
             <Rule :r=missionObject.primary></Rule>
         </v-col>
-        <v-col cols="12" md="6" lg="3">
+        <v-col cols="12" md="6" lg="4">
             <Map :m=missionObject.map></Map>
         </v-col>
     </v-row>
@@ -46,38 +43,26 @@ const dep = {
 }
 
 const maps = {
-    1: {
-        name: 'WTC 1: Search and Destroy - MEDIUM',
-        image: 'WTC_map1.png'
+    tipping_2: {
+        name: 'Tipping Point 2',
+        image: 'tipping_2.png'
     },
-    7: {
-        name: 'WTC 7: Hammer and Anvil - MEDIUM',
-        image: 'WTC_map7.png'
+    hammer_6_hs: {
+        name: 'Hammer & Anvil 6 HS',
+        image: 'hammer_6_hs.png'
     },
-    9: {
-        name: 'WTC 9: Search and Destroy - MEDIUM',
-        image: 'WTC_map9.png'
+    hammer_5: {
+        name: 'THammer & Anvil 5',
+        image: 'hammer_5.png'
     },
-    51: {
-        name: 'WTC 51: Tipping Point - MEDIUM',
-        image: 'WTC_map51.png'
+    search_7: {
+        name: 'Search & Destroy 7',
+        image: 'search_7.png'
     },
-    54: {
-        name: 'WTC 54: Tipping Point - MEDIUM',
-        image: 'WTC_map54.png'
+    crucible_3: {
+        name: 'Crucible of Battle 3',
+        image: 'crucible_3.png'
     },
-    wtc_hammers: {
-        name: 'WTC Hammer and Anvil',
-        image: 'WTC_hammers.png'
-    },
-    wtc_searches: {
-        name: 'WTC Search and Destroy',
-        image: 'WTC_searches.png'
-    },
-    wtc_crucibles: {
-        name: 'WTC Crucible of Battle',
-        image: 'WTC_crucibles.png'
-    }
 }
 
 const mis = {
@@ -97,16 +82,12 @@ const mis = {
         name: 'FOG OF WAR',
         text: 'In the first battle round, units have the Benefit of Cover, and players cannot use Core Stratagems (excluding the New Orders Stratagem).'
     },
-    hidden: {
-        name: 'HIDDEND SUPPLIES',
-        text: 'In the Place Objective Markers step, players must set up one additional objective marker in No Man’s Land.<br>\
-            Before setting up this new objective marker, players must first move the objective marker in the centre of the battlefield 6" directly towards one of the corners of the battlefield (if No Man’s Land touches any of the corners of the battlefield, you must move the objective marker towards one of those corners). Otherwise, the players roll-off, and the winner selects which corner the objective marker is moved towards. Players then set up the new objective marker 6" from the centre of the battlefield towards the diagonally opposite corner of the battlefield to the previously moved objective marker.'
-    },
     inspired: {
         name: 'INSPIRED LEADERSHIP',
         text: 'While a player’s WARLORD is not within their deployment zone, each time a unit from that player’s army takes a Battle-shock test, if that player’s WARLORD is within 9" of and visible to that unit, add 1 to that test.'
     }
 }
+
 
 const prim = {
     purge: {
@@ -117,6 +98,7 @@ const prim = {
             <i>SECOND BATTLE ROUND ONWARDS:</i><br>\
             WHEN: End of the battle round.<br>\
             Each player scores 4VP if more enemy units than friendly units were destroyed this battle round.<br>\
+            <i>SECOND BATTLE ROUND ONWARDS:</i><br>\
             WHEN: End of the Command phase (or the end of your turn if it is the fifth battle round and you are going second).<br>\
             The player whose turn it is scores 4VP if they control one or more objective markers, and an additional 4VP if they control more objective markers than their opponent controls."
     },
@@ -126,7 +108,7 @@ const prim = {
             WHEN: End of the Command phase (or the end of your turn if it is the fifth battle round and you are going second).<br>\
             If the player whose turn it is does not control the objective marker in their deployment zone, they score 3VP for each objective marker they control.<br>\
             OR<br>\
-            If the player whose turn it is controls the objective marker in their deployment zone, they score 3VP for controlling that objective marker, and 5VP for each other objective marker they control."
+            If the player whose turn it is controls the objective marker in their deployment zone, they score 3VP for controlling that objective marker, and 5VP for each other objective marker they control (up to 15VP per turn)."
     },
     take: {
         name: 'TAKE AND HOLD',
@@ -173,51 +155,61 @@ const prim = {
             <i>SECOND BATTLE ROUND ONWARDS</i><br>\
             WHEN: End of the Command phase (or the end of your turn if it is the fifth battle round and you are going second).<br>\
             The player whose turn it is scores 5VP for each objective marker they control (up to 10VP per turn).'
-    }
+    },
+    terraform: {
+        name: 'TERRAFORM',
+        text: '<i>BURN (ACTION)</i><br>\
+            STARTS: Your Shooting phase.<br>\
+            UNITS: One or more units from your army, each within range of a different objective marker that is not within your deployment zone.<br>\
+            COMPLETES: End of the turn, if the unit performing this Action is still within range of the same objective marker and you control that objective marker.<br>\
+            IF COMPLETED: Each of those objective markers is terraformed by you. If that objective marker was terraformed by your opponent, it no longer is.<br>\
+            <i>SECOND BATTLE ROUND ONWARDS</i><br>\
+            WHEN: End of the Command phase (or the end of your turn if it is the fifth battle round and you are going second).<br>\
+            The player whose turn it is scores 4VP for each objective marker they control (up to 12VP per turn).<br>\
+            <i>SECOND BATTLE ROUND ONWARDS</i><br>\
+            WHEN: End of the turn.<br>\
+            Each player scores 1VP for each objective marker that is terraformed by them.'
+    },
+    hidden: {
+        name: 'HIDDEND SUPPLIES',
+        text: 'In the Place Objective Markers step, players must set up one additional objective marker in No Man’s Land.<br>\
+            Before setting up this new objective marker, players must first move the objective marker in the centre of the battlefield 6" directly towards one of the corners of the battlefield (if No Man’s Land touches any of the corners of the battlefield, you must move the objective marker towards one of those corners). Otherwise, the players roll off, and the winner selects which corner the objective marker is moved towards. Players then set up the new objective marker 6 from the centre of the battlefield towards the diagonally opposite corner of the battlefield to the previously moved objective marker.<br>\
+            <i>SECOND BATTLE ROUND ONWARDS</i><br>\
+            WHEN: End of the Command phase (or the end of your turn if it is the fifth battle round and you are going second).<br>\
+            The player whose turn it is scores VP as follows (these are cumulative):<br>\
+            <ul>\
+                <li>5VP If they control one objective marker not within their deployment zone.</li>\
+                <li>5VP If they control two objective markers not within their deployment zone.</li>\
+                <li>5VP if they control more objective markers than their opponent controls.</li>\
+            </ul>'
+    },
 }
 
 const gw_m = {
-    j: {
-        deployement: dep.search,
-        primary: prim.linchpin,
-        rule: mis.banners,
-        map: maps['wtc_searches']
-    },
-    b: {
-        deployement: dep.tipping,
-        primary: prim.purge,
-        rule: mis.smoke,
-        map: maps[51]
-    },
     c: {
         deployement: dep.tipping,
         primary: prim.linchpin,
-        rule: mis.fog,
-        map: maps[54]
+        map: maps['tipping_2']
+    },
+    f: {
+        deployement: dep.hammer,
+        primary: prim.hidden,
+        map: maps.hammer_6_hs
+    },
+    g: {
+        deployement: dep.hammer,
+        primary: prim.purge,
+        map: maps['hammer_5']
     },
     l: {
         deployement: dep.search,
         primary: prim.take,
-        rule: mis.hidden,
-        map: maps['wtc_searches']
+        map: maps['search_7']
     },
-    n: {
+    o: {
         deployement: dep.crucible,
-        primary: prim.ritual,
-        rule: mis.swift,
-        map: maps['wtc_crucibles']
-    },
-    p: {
-        deployement: dep.crucible,
-        primary: prim.scorched,
-        rule: mis.inspired,
-        map: maps['wtc_crucibles']
-    },
-    h: {
-        deployement: dep.hammer,
-        primary: prim.drop,
-        rule: mis.smoke,
-        map: maps['wtc_hammers']
+        primary: prim.terraform,
+        map: maps['crucible_3']
     }
 }
 
@@ -228,6 +220,7 @@ const props = defineProps({
 })
 
 const missionObject = computed(() => {
+    console.log(gw_m[props.missionIndex])
     return gw_m[props.missionIndex];
 })
 
