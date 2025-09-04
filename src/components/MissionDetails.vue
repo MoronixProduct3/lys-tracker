@@ -43,25 +43,25 @@ const dep = {
 }
 
 const maps = {
-    tipping_2: {
-        name: 'Tipping Point 2',
-        image: 'tipping_2.png'
+    tipping: {
+        name: 'TIPPING POINT',
+        image: 'tipping_2-3-5-6-7.png'
     },
-    hammer_6_hs: {
-        name: 'Hammer & Anvil 6 HS',
-        image: 'hammer_6_hs.png'
+    hammer_hs: {
+        name: 'HAMMER & ANVIL — HIDDEN SUPPLIES',
+        image: 'hammer_hs_2-3-5-6-7.png'
     },
-    hammer_5: {
-        name: 'THammer & Anvil 5',
-        image: 'hammer_5.png'
+    hammer: {
+        name: 'HAMMER & ANVIL',
+        image: 'hammer_2-3-5-6-7.png'
     },
-    search_7: {
-        name: 'Search & Destroy 7',
-        image: 'search_7.png'
+    search: {
+        name: 'SEARCH & DESTROY',
+        image: 'search_2-3-5-6-7.png'
     },
-    crucible_3: {
-        name: 'Crucible of Battle 3',
-        image: 'crucible_3.png'
+    crucible: {
+        name: 'CRUCIBLE OF BATTLE',
+        image: 'crucible_2-3-5-6-7.png'
     },
 }
 
@@ -189,27 +189,27 @@ const gw_m = {
     c: {
         deployement: dep.tipping,
         primary: prim.linchpin,
-        map: maps['tipping_2']
+        map: maps.tipping
     },
     f: {
         deployement: dep.hammer,
         primary: prim.hidden,
-        map: maps.hammer_6_hs
+        map: maps.hammer_hs
     },
     g: {
         deployement: dep.hammer,
         primary: prim.purge,
-        map: maps['hammer_5']
+        map: maps.hammer
     },
     l: {
         deployement: dep.search,
         primary: prim.take,
-        map: maps['search_7']
+        map: maps.search
     },
     o: {
         deployement: dep.crucible,
         primary: prim.terraform,
-        map: maps['crucible_3']
+        map: maps.crucible
     }
 }
 
