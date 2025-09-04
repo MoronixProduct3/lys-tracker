@@ -220,7 +220,6 @@ const props = defineProps({
 })
 
 const missionObject = computed(() => {
-    console.log(gw_m[props.missionIndex])
     return gw_m[props.missionIndex];
 })
 
