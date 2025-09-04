@@ -4,7 +4,7 @@
       <v-app-bar-title>Tournois D'Équipe Imperia-Lys X</v-app-bar-title>
     </v-app-bar>
     <v-main>
-      <LandingPage />
+      <router-view />
     </v-main>
 
   </v-app>
