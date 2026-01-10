@@ -4,24 +4,24 @@
       <v-col cols="12">
         <!-- Day 1 -->
         <v-expansion-panels>
-          <v-expansion-panel title="Round 1: 8h30-12h00 - Mission C">
+          <v-expansion-panel title="Round 1: 8h30-12h00 - Mission O">
             <v-expansion-panel-text>
-              <MissionDetails mission-index="c"></MissionDetails>
+              <MissionDetails mission-index="o"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
 
           <v-expansion-panel title="12h00-13h15 - Pause Repas" readonly expand-icon="mdi-food">
           </v-expansion-panel>
 
-          <v-expansion-panel title="Round 2: 13h15-16h45 - Mission O">
+          <v-expansion-panel title="Round 2: 13h15-16h45 - Mission C">
             <v-expansion-panel-text>
-              <MissionDetails mission-index="o"></MissionDetails>
+              <MissionDetails mission-index="c"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
 
-          <v-expansion-panel title="Round 3: 17h00-20h30 - Mission G">
+          <v-expansion-panel title="Round 3: 17h00-20h30 - Mission B">
             <v-expansion-panel-text>
-              <MissionDetails mission-index="g"></MissionDetails>
+              <MissionDetails mission-index="b"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -30,18 +30,18 @@
       <v-col cols="12">
         <!-- Day 2 -->
         <v-expansion-panels>
-          <v-expansion-panel title="Round 4: 8h30-12h00 - Mission F">
+          <v-expansion-panel title="Round 4: 8h30-12h00 - Mission I">
             <v-expansion-panel-text>
-              <MissionDetails mission-index="f"></MissionDetails>
+              <MissionDetails mission-index="i"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
 
           <v-expansion-panel title="12h00-13h15 - Pause Repas" readonly expand-icon="mdi-food">
           </v-expansion-panel>
 
-          <v-expansion-panel title="Round 5: 13h15-16h45 - Mission L">
+          <v-expansion-panel title="Round 5: 13h15-16h45 - Mission E">
             <v-expansion-panel-text>
-              <MissionDetails mission-index="l"></MissionDetails>
+              <MissionDetails mission-index="e"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
 
@@ -51,13 +51,9 @@
       <v-col cols="12" sm="6">
         <v-card title="TEIL">
           <v-btn class="ma-2" color="blue" prepend-icon='mdi-open-in-new' text='Guide du Joueur'
-            href="404"></v-btn>
+            href="https://docs.google.com/document/d/1wMdCLVwi3h_fLRR68ySf8lQumdlTvE8R/edit#heading=h.gjdgxs"></v-btn>
           <v-btn class="ma-2" color="red" prepend-icon='mdi-sword' text='BCP'
-            href="https://www.bestcoastpairings.com/event/wf32USYfefge"></v-btn>
-          <v-btn text="Grille d'évaluation de peinture" class="ma-2" color="pink" prepend-icon='mdi-brush-outline'
-            href="404"></v-btn>
-          <v-btn class="ma-2" color="purple" prepend-icon='mdi-play' text='Pairing Demo'
-            href="https://www.youtube.com/watch?v=2eiKPZ0sfPw"></v-btn>
+            href="https://www.bestcoastpairings.com/event/a9dk41yw4W24"></v-btn>
         </v-card>
       </v-col>
 

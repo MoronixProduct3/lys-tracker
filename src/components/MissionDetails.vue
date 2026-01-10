@@ -45,7 +45,7 @@ const dep = {
 const maps = {
     tipping: {
         name: 'TIPPING POINT',
-        image: 'tipping_2-3-5-6-7.png'
+        image: 'WTC_tipping.png'
     },
     hammer_hs: {
         name: 'HAMMER & ANVIL — HIDDEN SUPPLIES',
@@ -53,15 +53,15 @@ const maps = {
     },
     hammer: {
         name: 'HAMMER & ANVIL',
-        image: 'hammer_2-3-5-6-7.png'
+        image: 'WTC_hammer.png'
     },
     search: {
         name: 'SEARCH & DESTROY',
-        image: 'search_2-3-5-6-7.png'
+        image: 'WTC_search.png'
     },
     crucible: {
         name: 'CRUCIBLE OF BATTLE',
-        image: 'crucible_2-3-5-6-7.png'
+        image: 'WTC_crucible.png'
     },
 }
 
@@ -186,10 +186,20 @@ const prim = {
 }
 
 const gw_m = {
+    b: {
+        deployement: dep.tipping,
+        primary: prim.drop,
+        map: maps.tipping
+    },
     c: {
         deployement: dep.tipping,
         primary: prim.linchpin,
         map: maps.tipping
+    },
+    e: {
+        deployement: dep.hammer,
+        primary: prim.take,
+        map: maps.hammer
     },
     f: {
         deployement: dep.hammer,
@@ -200,6 +210,11 @@ const gw_m = {
         deployement: dep.hammer,
         primary: prim.purge,
         map: maps.hammer
+    },
+    i: {
+        deployement: dep.search,
+        primary: prim.hidden,
+        map: maps.search
     },
     l: {
         deployement: dep.search,

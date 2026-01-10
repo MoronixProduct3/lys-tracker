@@ -32,7 +32,7 @@
 import { ref , onMounted, onBeforeUnmount} from 'vue'
 
 const dialog = ref(false)
-const event = ref("wf32USYfefge")
+const event = ref("a9dk41yw4W24")
 const online = ref(false)
 
 const emit = defineEmits(['incoming'])
