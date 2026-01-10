@@ -10,16 +10,16 @@
             </v-expansion-panel-text>
           </v-expansion-panel>
 
-          <v-expansion-panel title="12h00-13h15 - Pause Repas" readonly expand-icon="mdi-food">
+          <v-expansion-panel title="12h00-13h00 - Pause Repas" readonly expand-icon="mdi-food">
           </v-expansion-panel>
 
-          <v-expansion-panel title="Round 2: 13h15-16h45 - Mission C">
+          <v-expansion-panel title="Round 2: 13h00-16h30 - Mission C">
             <v-expansion-panel-text>
               <MissionDetails mission-index="c"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
 
-          <v-expansion-panel title="Round 3: 17h00-20h30 - Mission B">
+          <v-expansion-panel title="Round 3: 16h45-20h15 - Mission B">
             <v-expansion-panel-text>
               <MissionDetails mission-index="b"></MissionDetails>
             </v-expansion-panel-text>
@@ -36,10 +36,10 @@
             </v-expansion-panel-text>
           </v-expansion-panel>
 
-          <v-expansion-panel title="12h00-13h15 - Pause Repas" readonly expand-icon="mdi-food">
+          <v-expansion-panel title="12h00-13h00 - Pause Repas" readonly expand-icon="mdi-food">
           </v-expansion-panel>
 
-          <v-expansion-panel title="Round 5: 13h15-16h45 - Mission E">
+          <v-expansion-panel title="Round 5: 13h00-16h30 - Mission E">
             <v-expansion-panel-text>
               <MissionDetails mission-index="e"></MissionDetails>
             </v-expansion-panel-text>
