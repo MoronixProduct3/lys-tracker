@@ -186,6 +186,11 @@ const prim = {
 }
 
 const gw_m = {
+    a: {
+        deployement: dep.tipping,
+        primary: prim.take,
+        map: maps.tipping
+    },
     b: {
         deployement: dep.tipping,
         primary: prim.drop,
@@ -214,6 +219,11 @@ const gw_m = {
     i: {
         deployement: dep.search,
         primary: prim.hidden,
+        map: maps.search
+    },
+    j: {
+        deployement: dep.search,
+        primary: prim.linchpin,
         map: maps.search
     },
     l: {

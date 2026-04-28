@@ -4,24 +4,24 @@
       <v-col cols="12">
         <!-- Day 1 -->
         <v-expansion-panels>
-          <v-expansion-panel title="Round 1: 8h30-12h00 - Mission O">
+          <v-expansion-panel title="Round 1: 8h30-11h30 - Mission G">
+            <v-expansion-panel-text>
+              <MissionDetails mission-index="g"></MissionDetails>
+            </v-expansion-panel-text>
+          </v-expansion-panel>
+
+          <v-expansion-panel title="11h30-12h30 - Pause Repas" readonly expand-icon="mdi-food">
+          </v-expansion-panel>
+
+          <v-expansion-panel title="Round 2: 12h30-15h30 - Mission O">
             <v-expansion-panel-text>
               <MissionDetails mission-index="o"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
 
-          <v-expansion-panel title="12h00-13h00 - Pause Repas" readonly expand-icon="mdi-food">
-          </v-expansion-panel>
-
-          <v-expansion-panel title="Round 2: 13h00-16h30 - Mission C">
+          <v-expansion-panel title="Round 3: 15h40-18h40 - Mission J">
             <v-expansion-panel-text>
-              <MissionDetails mission-index="c"></MissionDetails>
-            </v-expansion-panel-text>
-          </v-expansion-panel>
-
-          <v-expansion-panel title="Round 3: 16h45-20h15 - Mission B">
-            <v-expansion-panel-text>
-              <MissionDetails mission-index="b"></MissionDetails>
+              <MissionDetails mission-index="j"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -30,18 +30,18 @@
       <v-col cols="12">
         <!-- Day 2 -->
         <v-expansion-panels>
-          <v-expansion-panel title="Round 4: 8h30-12h00 - Mission I">
+          <v-expansion-panel title="Round 4: 8h30-11h30 - Mission A">
             <v-expansion-panel-text>
-              <MissionDetails mission-index="i"></MissionDetails>
+              <MissionDetails mission-index="a"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
 
-          <v-expansion-panel title="12h00-13h00 - Pause Repas" readonly expand-icon="mdi-food">
+          <v-expansion-panel title="11h30-12h30 - Pause Repas" readonly expand-icon="mdi-food">
           </v-expansion-panel>
 
-          <v-expansion-panel title="Round 5: 13h00-16h30 - Mission E">
+          <v-expansion-panel title="Round 5: 12h30-15h30 - Mission F">
             <v-expansion-panel-text>
-              <MissionDetails mission-index="e"></MissionDetails>
+              <MissionDetails mission-index="f"></MissionDetails>
             </v-expansion-panel-text>
           </v-expansion-panel>
 
@@ -51,9 +51,13 @@
       <v-col cols="12" sm="6">
         <v-card title="TEIL">
           <v-btn class="ma-2" color="blue" prepend-icon='mdi-open-in-new' text='Guide du Joueur'
-            href="https://docs.google.com/document/d/1wMdCLVwi3h_fLRR68ySf8lQumdlTvE8R/edit#heading=h.gjdgxs"></v-btn>
-          <v-btn class="ma-2" color="red" prepend-icon='mdi-sword' text='BCP'
-            href="https://www.bestcoastpairings.com/event/a9dk41yw4W24"></v-btn>
+            href="https://docs.google.com/document/d/10Qz4gic10sdJCkHcZdkFnjEuUHC8vGum/edit?usp=sharing&ouid=116957720558925974360&rtpof=true&sd=true"></v-btn>
+          <v-btn class="ma-2" color="orange" prepend-icon='mdi-sword' text='BCP'
+            href="https://www.bestcoastpairings.com/event/nU8Ddx55eYbA"></v-btn>
+          <v-btn class="ma-2" color="red" prepend-icon='mdi-play' text='Video Intro'
+            href="https://youtu.be/y4m_3NUuyN4"></v-btn>
+          <v-btn class="ma-2" color="teal" prepend-icon='mdi-brush' text='Auto-Evaluation Hobby'
+            href="https://youtu.be/y4m_3NUuyN4"></v-btn>
         </v-card>
       </v-col>
 
@@ -69,7 +73,7 @@
       <v-col cols="12" sm="6">
         <v-card title="WTC FAQs & Downloads">
           <v-btn text="WTC Downloads" class="ma-2" color="orange" prepend-icon='mdi-open-in-new'
-            href="https://worldteamchampionship.com/wtc-rules/"></v-btn>
+            href="https://wtc-belgium.com/wh40k-rules/"></v-btn>
         </v-card>
       </v-col>
     </v-row>
