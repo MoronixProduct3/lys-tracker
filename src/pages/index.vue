@@ -57,7 +57,7 @@
           <v-btn class="ma-2" color="red" prepend-icon='mdi-play' text='Video Intro'
             href="https://youtu.be/y4m_3NUuyN4"></v-btn>
           <v-btn class="ma-2" color="teal" prepend-icon='mdi-brush' text='Auto-Evaluation Hobby'
-            href="https://youtu.be/y4m_3NUuyN4"></v-btn>
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfu1Q7qoW323NL6G7mur46f7JQ9Fgs2A9xYa6oLZPXUU7ih-A/viewform?usp=publish-editor"></v-btn>
         </v-card>
       </v-col>
 
